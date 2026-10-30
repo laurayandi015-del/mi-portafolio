@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Portafolio de diseño gráfico, identidad visual y proyectos digitales. Estudiante del Tecnólogo en Producción Multimedia del SENA.">
+   <meta name="theme-color" content="#000005">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="css/style.css">
+
+   <title>Portafolio | Laura Yande</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <div class="blob-animate"></div>
+      <nav class="nav container" aria-label="Navegación principal">
+         <a href="#home" class="nav__logo">Laura</a>
+         <div class="nav__menu">
+            <ul class="nav__list">
+               <li><a href="#about" class="nav__link">Sobre mí</a></li>
+               <li><a href="#projects" class="nav__link">Proyectos</a></li>
+               <li><a href="#contact" class="nav__link" id="navContact">Contacto</a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__shadow"></div>
+         <div class="home__container container grid">
+            <div class="home__data">
+               <h3 class="home__greeting">Hola, soy</h3>
+               <h1 class="home__name">Laura <br>Yande</h1>
+            </div>
+            <div class="home__image">
+               <div class="blob-animate"></div>
+               <div class="sparkles" data-sparkles="10" aria-hidden="true"></div>
+               <img src="img/sinfondo.png" alt="Retrato de Laura Yande" class="home__perfil">
+            </div>
+            <div class="home__info">
+               <h3 class="home__split">Estudiante SENA</h3>
+               <h2 class="home__profession-1">Diseño</h2>
+               <h2 class="home__profession-2">&amp; Multimedia</h2>
+            </div>
+            <!-- Se llena desde js/main.js con los enlaces reales de CONFIG -->
+            <div class="home__social" id="homeSocial" hidden></div>
+            <a href="#" class="home__cv" id="homeCv" target="_blank" rel="noopener" hidden>
+               HOJA DE VIDA <i class="ri-file-list-2-line"></i>
+            </a>
+         </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__shadow"></div>
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h2 class="section__title reveal">
+                  <span>Diseño</span>
+                  <br> con intención
+               </h2>
+               <p class="about__description reveal">
+                  Soy estudiante del Tecnólogo en Producción Multimedia del SENA
+                  y mi trabajo gira alrededor del <b>diseño gráfico</b>, la
+                  <b>identidad visual</b> y los proyectos digitales. Me interesa que
+                  cada pieza, ya sea un logo, un menú o una revista, cuente algo claro
+                  y se vea cuidada. Aquí reúno lo que he ido construyendo mientras
+                  aprendo, y sigo probando ideas y mejorando con cada proyecto.
+               </p>
+               <a href="#projects" class="button reveal">
+                  Ver proyectos <i class="ri-arrow-down-line"></i>
+               </a>
+            </div>
+            <div class="about__image">
+               <div class="blob-animate"></div>
+               <div class="blob-animate"></div>
+               <div class="sparkles" data-sparkles="6" aria-hidden="true"></div>
+               <img src="img/sinfondo.png" alt="Laura Yande, estudiante de Producción Multimedia" class="about__perfil" loading="lazy">
+            </div>
+         </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+         <h2 class="section__title reveal">
+            Mis <br>
+            <span>Proyectos</span>
+         </h2>
+         <div class="projects__container container grid">
+            <div class="projects__swiper swiper">
+               <div class="swiper-wrapper">
+
+                 <!-- 01 · Revista (PDF de 3 páginas) -->
+<article class="projects__card swiper-slide">
+   <div class="blob"></div>
+
+   <div class="projects__number">
+      <span class="projects__num">01</span>
+      <h3>Editorial</h3>
+   </div>
+
+   <div class="projects__data">
+      <h3 class="projects__title">
+         Revista: homenaje a<br> Luis H. Ledezma
+      </h3>
+      <p class="projects__subtitle">Sobre el proyecto</p>
+      <p class="projects__description">
+         Revista de tres páginas sobre la vida del fotógrafo payanés
+         Luis Hernando Ledezma: textos en columnas, fotografías de
+         archivo y detalles de papel rasgado y cinta.
+      </p>
+   </div>
+
+   <div class="projects__image">
+      <a href="pdf/revista.pdf" target="_blank" rel="noopener"
+         aria-label="Abrir la revista completa en una pestaña nueva">
+         <img src="img/revista-portada.png"
+              alt="Portada de la revista sobre Luis Hernando Ledezma"
+              class="projects__img" loading="lazy">
+      </a>
+   </div>
+
+   <div class="projects__actions">
+      <a href="pdf/revista.pdf" target="_blank" rel="noopener"
+         class="projects__link">
+         <i class="ri-book-open-line"></i> Abrir revista
+      </a>
+
+      <a href="pdf/revista.pdf" download="revista.pdf"
+         class="projects__link projects__link--ghost">
+         <i class="ri-download-2-line"></i> Descargar PDF
+      </a>
+   </div>
+</article>
+
+                  <!-- 02 · Photoshop -->
+                  <article class="projects__card swiper-slide">
+   <div class="blob"></div>
+
+   <div class="projects__number">
+      <span class="projects__num">02</span>
+      <h3>Photoshop</h3>
+   </div>
+
+   <div class="projects__data">
+      <h3 class="projects__title">Tutorial de <br> Photoshop</h3>
+      <p class="projects__subtitle">Sobre el proyecto</p>
+      <p class="projects__description">
+         Pieza vertical para redes con el título «¿Solo para editar fotos?»,
+         un retrato con vista de antes y después del retoque y el logo de
+         Photoshop con brillo azul sobre fondo negro.
+      </p>
+   </div>
+
+   <div class="projects__image">
+      <a href="img/photoshop.png" target="_blank" rel="noopener"
+         aria-label="Ver la pieza de Photoshop completa">
+         <img src="img/photoshop.png"
+              alt="Pieza gráfica de Photoshop"
+              class="projects__img" loading="lazy">
+      </a>
+   </div>
+
+   <div class="projects__actions">
+      <a href="img/photoshop.png" target="_blank" rel="noopener"
+         class="projects__link">
+         <i class="ri-eye-line"></i> Ver completo
+      </a>
+
+      <a href="img/photoshop.png" download="photoshop.png"
+         class="projects__link projects__link--ghost">
+         <i class="ri-download-2-line"></i> Descargar
+      </a>
+   </div>
+</article>
+
+                 <!-- 03 · Logos -->
+<article class="projects__card swiper-slide">
+   <div class="blob"></div>
+
+   <div class="projects__number">
+      <span class="projects__num">03</span>
+      <h3>Logos</h3>
+   </div>
+
+   <div class="projects__data">
+      <h3 class="projects__title">Logos para <br> Sazón de Plaza</h3>
+      <p class="projects__subtitle">Sobre el proyecto</p>
+      <p class="projects__description">
+         Identidad para un negocio de comida: un salero que acompaña
+         la tipografía caligráfica, en cuatro versiones: fondo crema,
+         con borde verde, sin fondo y una oscura con naranja.
+      </p>
+   </div>
+
+   <div class="projects__image">
+      <a href="img/sazon%20de%20plaza.png" target="_blank" rel="noopener"
+         aria-label="Ver los logos completos">
+         <img src="img/sazon%20de%20plaza.png"
+              alt="Cuatro versiones del logo Sazón de Plaza"
+              class="projects__img" loading="lazy">
+      </a>
+   </div>
+
+   <div class="projects__actions">
+      <a href="img/sazon%20de%20plaza.png" target="_blank" rel="noopener"
+         class="projects__link">
+         <i class="ri-eye-line"></i> Ver completo
+      </a>
+
+      <a href="img/sazon%20de%20plaza.png" download="sazon-de-plaza.png"
+         class="projects__link projects__link--ghost">
+         <i class="ri-download-2-line"></i> Descargar
+      </a>
+   </div>
+</article>
+
+                 <!-- 04 · Menú -->
+<article class="projects__card swiper-slide">
+   <div class="blob"></div>
+
+   <div class="projects__number">
+      <span class="projects__num">04</span>
+      <h3>Menú</h3>
+   </div>
+
+   <div class="projects__data">
+      <h3 class="projects__title">Menú de <br> Juanchos Pizza</h3>
+      <p class="projects__subtitle">Sobre el proyecto</p>
+      <p class="projects__description">
+         Menú de dos páginas sobre fondo de madera: panzerottis,
+         combos, bebidas, pizzas, comidas rápidas y adicionales,
+         con pinceladas rojas y naranjas para separar cada zona.
+      </p>
+   </div>
+
+   <div class="projects__image">
+      <a href="img/pizza.png" target="_blank" rel="noopener"
+         aria-label="Ver el menú completo">
+         <img src="img/pizza.png"
+              alt="Menú de Juanchos Pizza con panzerottis, pizzas y comidas rápidas"
+              class="projects__img" loading="lazy">
+      </a>
+   </div>
+
+   <div class="projects__actions">
+      <a href="img/pizza.png" target="_blank" rel="noopener"
+         class="projects__link">
+         <i class="ri-eye-line"></i> Ver completo
+      </a>
+
+      <a href="img/pizza.png" download="menu-juanchos-pizza.png"
+         class="projects__link projects__link--ghost">
+         <i class="ri-download-2-line"></i> Descargar
+      </a>
+   </div>
+</article>
+
+                 <!-- 05 · Constructora -->
+<article class="projects__card swiper-slide">
+   <div class="blob"></div>
+
+   <div class="projects__number">
+      <span class="projects__num">05</span>
+      <h3>Constructora</h3>
+   </div>
+
+   <div class="projects__data">
+      <h3 class="projects__title">Afiche para <br> Buenavista Constructora</h3>
+      <p class="projects__subtitle">Sobre el proyecto</p>
+      <p class="projects__description">
+         Afiche vertical para un proyecto de apartamentos: fachada del edificio,
+         plano en 3D, lista de zonas comunes, código QR y datos de contacto
+         sobre un fondo azul y verde.
+      </p>
+   </div>
+
+   <div class="projects__image">
+      <a href="img/constructora.png" target="_blank" rel="noopener"
+         aria-label="Ver el afiche completo">
+         <img src="img/constructora.png"
+              alt="Afiche de Buenavista Constructora"
+              class="projects__img" loading="lazy">
+      </a>
+   </div>
+
+   <div class="projects__actions">
+      <a href="img/constructora.png" target="_blank" rel="noopener"
+         class="projects__link">
+         <i class="ri-eye-line"></i> Ver completo
+      </a>
+
+      <a href="img/constructora.png" download="afiche-buenavista.png"
+         class="projects__link projects__link--ghost">
+         <i class="ri-download-2-line"></i> Descargar
+      </a>
+   </div>
+</article>
+                  <!--
+                     06 · PENDIENTE: diseño relacionado con Ledezma.
+                     Falta confirmar el nombre y el archivo. Cuando lo tengas, copia una tarjeta
+                     de arriba, cambia número, textos y rutas, y pégala aquí.
+                  -->
+
+               </div>
+
+            </div>
+
+            <!-- Un punto por proyecto: se llena solo desde js/main.js -->
+            <div class="projects__dots" id="projectDots" role="group" aria-label="Proyectos"></div>
+            <p class="projects__count" id="projectCount" aria-live="polite"></p>
+         </div>
+      </section>
+
+      <!--==================== WORK ====================-->
+      <section class="work section" id="work">
+         <h2 class="section__title reveal">
+            <span>Mi</span>
+            <br> Trayectoria
+         </h2>
+
+         <div class="work__container container grid">
+            <div class="work__tabs" role="tablist">
+               <!-- Botón Formación -->
+               <button class="work__button work-active" data-target="#formacion" role="tab" aria-selected="true">
+                 Formación <i class="ri-graduation-cap-line"></i>
+               </button>
+               <!-- Botón Enfoque -->
+               <button class="work__button" data-target="#enfoque" role="tab" aria-selected="false">
+                   Enfoque <i class="ri-palette-line"></i>
+               </button>
+            </div>
+
+            <div class="work__area reveal">
+               <div class="work__line"></div>
+
+               <!-- contenido Formación -->
+               <div class="work__content work-active" data-content id="formacion" role="tabpanel">
+                  <div class="work__card">
+                     <div class="work__data">
+                        <div>
+                           <h3 class="work__title">Producción <br> Multimedia</h3>
+                           <p class="work__subtitle">Tecnólogo · SENA</p>
+                        </div>
+                        <h2 class="work__year">Hoy</h2>
+                     </div>
+                     <p class="work__description">
+                      Formación en producción multimedia con énfasis en diseño gráfico,
+                      identidad visual y proyectos digitales. Actualmente en curso.
+                     </p>
+                  </div>
+               </div>
+
+               <!-- contenido Enfoque -->
+               <div class="work__content" data-content id="enfoque" role="tabpanel">
+                  <div class="work__card">
+                     <div class="work__data">
+                        <div>
+                           <h3 class="work__title">Diseño <br> gráfico</h3>
+                           <p class="work__subtitle">Piezas visuales</p>
+                        </div>
+                        <h2 class="work__year">01</h2>
+                     </div>
+                     <p class="work__description">
+                      Afiches, piezas para redes y menús pensados para que la información se lea rápido y se vea cuidada.
+                     </p>
+                  </div>
+
+                  <div class="work__card">
+                     <div class="work__data">
+                        <div>
+                           <h3 class="work__title">Identidad <br> visual</h3>
+                           <p class="work__subtitle">Marca y logotipos</p>
+                        </div>
+                        <h2 class="work__year">02</h2>
+                     </div>
+                     <p class="work__description">
+                      Logos con varias versiones para distintos fondos, buscando que una marca se reconozca de un vistazo.
+                     </p>
+                  </div>
+
+                  <div class="work__card">
+                     <div class="work__data">
+                        <div>
+                           <h3 class="work__title">Proyectos <br> digitales</h3>
+                           <p class="work__subtitle">Editorial y web</p>
+                        </div>
+                        <h2 class="work__year">03</h2>
+                     </div>
+                     <p class="work__description">
+                      Una revista en PDF y este portafolio web, donde reúno y comparto todo mi trabajo.
+                     </p>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <!-- Secciones reservadas (vacías en el proyecto original); quedan ocultas hasta que tengan contenido -->
+      <section class="services section" hidden></section>
+      <section class="testimonials section" hidden></section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <div class="contact__container container grid">
+            <h2 class="section__title reveal">
+               <span>Hablemos</span>
+            </h2>
+            <p class="contact__text reveal">
+               Si quieres conocer más de mi trabajo o tienes un proyecto en mente, escríbeme.
+            </p>
+            <!-- Se llena desde js/main.js con los datos reales de CONFIG -->
+            <div class="contact__links reveal" id="contactLinks"></div>
+            <!-- Correo: abre la app de correo con el mensaje listo para escribir -->
+<div class="contact__links reveal">
+   <a href="mailto:laurayandi015@gmail.com?subject=Hola%20Laura%2C%20vi%20tu%20portafolio"
+      class="button">
+      <i class="ri-mail-send-line"></i> Escríbeme
+   </a>
+   <a href="mailto:laurayandi015@gmail.com" class="button">
+      <i class="ri-at-line"></i> laurayandi015@gmail.com
+   </a>
+</div>
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer grid">
+      <p>&copy; <span id="year">2026</span> Laura Yande. Portafolio de diseño.</p>
+   </footer>
+
+   <!--=============== ANIME JS (sin uso actualmente; se conserva del proyecto original) ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/animejs@4/lib/anime.iife.min.js"></script>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="js/main.js"></script>
+</body>
+</html>
